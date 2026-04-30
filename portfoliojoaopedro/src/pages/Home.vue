@@ -1,8 +1,8 @@
 <template>
-  <div class="grid gap-4 p-8 min-h-screen items-stretch" style="grid-template-columns: 22% 73% 5%; background-color: #101110;">
+  <div class="grid gap-4 p-8 min-h-screen items-stretch" style="grid-template-columns: 22% 73% 5%;">
 
     <!-- Card Apresentação -->
-    <div class="relative h-full">
+    <div class="relative h-full animar-entrada">
 
       <div class="absolute inset-0 rounded-xl blur-2xl opacity-50" style="background: radial-gradient(ellipse at top left, #6B00E2 0%, #1B1B1B 45%, #1B1B1B 55%, #6B00E2 100%)"></div>
 
@@ -61,9 +61,23 @@
     </div>
 
     <!-- View -->
-    <div class="text-white">
-      View
+    <div class="text-white px-10">
+      <div class="SobreMim">
+        <div class="flex flex-row items-center">
+        <div class="bg-purple-700 w-3 h-3"></div>
+        <p class="pl-2">Sobre Mim</p>
+      </div>
+      <div>
+        <p class="text-4xl py-8">Olá! Me chamo <span class="text-purple-700">João Pedro Torres</span></p>
+      </div>
+      <div>
+        <p class="text-7xl">Conheça mais sobre mim!</p>
+      </div>
+      <div>
+        <p class="font-normal py-6">Como Desenvolvedor Full‑Stack, atuo no desenvolvimento e na manutenção de sistemas internos corporativos, criando soluções que integram front-end e back-end com eficiência e alta qualidade. Tenho experiência na prototipação e construção de interfaces utilizando Vue.js e Quasar, além da integração com APIs desenvolvidas em C#, .NET e ASP.NET.</p>
+      </div>
     </div>
+      </div>
 
     <!-- Menu -->
     <div class="text-white">
@@ -76,5 +90,19 @@
 <style>
 .roxo-texto {
   color: #6B00E2;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(-500px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animar-entrada {
+  animation: slideInLeft 2s ease-out forwards;
 }
 </style>
