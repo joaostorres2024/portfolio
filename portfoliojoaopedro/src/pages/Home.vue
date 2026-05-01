@@ -95,7 +95,7 @@
               Disponível 
               <span class="inline-block w-3 h-3 bg-green-500 rounded-full animate-pulse ml-1" style="margin-bottom: 3px;"></span>
             </p>
-            <p>Aberto novas oportunidades</p>
+            <p>Aberto a novas oportunidades</p>
           </div>
         </div>
       </div>
@@ -594,7 +594,7 @@
 </style>
 
 <script lang="ts">
-const NAV_SECTIONS = ['SobreMim', 'Projetos', 'StackTecnologias'];
+const NAV_SECTIONS = ['SobreMim', 'Projetos', 'StackTecnologias', 'Experiencia'];
 const navItems = document.querySelectorAll('.nav-item');
 const dot      = document.getElementById('navDot');
 const track    = document.getElementById('navTrack');
