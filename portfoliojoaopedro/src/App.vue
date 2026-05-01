@@ -16,16 +16,16 @@ onMounted(() => {
   el: vantaRef.value,
   mouseControls: true,
   touchControls: true,
-  gyroControls: false,
+  gyroControls: true,
   minHeight: 200.00,
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x101110,
-  color2: 0x101110,
+  color: 0x151515,
+  color2: 0x151515,
   backgroundColor: 0x000000,
   size: 7.00,
-  spacing: 40.00,
+  spacing: 25.00,
   showLines: false
 })
 })
